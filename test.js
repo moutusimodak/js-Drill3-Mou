@@ -1,6 +1,6 @@
 const inventory = require("./data");
 const {findCarById, findLastCar, sortcar, carYear, carsOlderThan2000,CarName} = require("./solution")
-
+//1
 const carId = findCarById(33);
 
     if (carId) {
@@ -10,8 +10,13 @@ const carId = findCarById(33);
     }
 
 
-
+//2
 const lastcarlist = findLastCar(inventory);
     // console.log(car);
 console.log(`Last car is a ${lastcarlist.car_make} ${lastcarlist.car_model}`);
     
+
+//3
+const sortedcar = sortcar(inventory);
+const sortedCarList = sortedcar.join('\n')
+console.log(`sorted car lists - ${sortedCarList}`);
