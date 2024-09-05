@@ -11,3 +11,7 @@ const carId = findCarById(33);
 
 
 
+const lastcarlist = findLastCar(inventory);
+    // console.log(car);
+console.log(`Last car is a ${lastcarlist.car_make} ${lastcarlist.car_model}`);
+    

@@ -14,6 +14,13 @@ function findCarById(id) {
     return null; 
 }
 
+// Question -2
+function findLastCar(inventory){
+    if (inventory.length === 0) {
+        return 'The inventory is empty.';
+    }
+    
+    return inventory[inventory.length -1];
+}
 
-
-module.exports = { findCarById};
+module.exports = { findCarById, findLastCar};
