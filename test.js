@@ -20,3 +20,7 @@ console.log(`Last car is a ${lastcarlist.car_make} ${lastcarlist.car_model}`);
 const sortedcar = sortcar(inventory);
 const sortedCarList = sortedcar.join('\n')
 console.log(`sorted car lists - ${sortedCarList}`);
+
+//4
+const carYearList = carYear(inventory);
+console.log(`${carYearList} \n`);

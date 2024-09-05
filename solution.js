@@ -38,5 +38,17 @@ function sortcar(inventory){
    return cmodel;
 }
 
+// Question -4
+function carYear(inventory){
+    const cyear =[]
+    for (let i = 0; i < inventory.length; i++) {
+        if (inventory[i] && typeof inventory[i] === 'object' && typeof inventory[i].car_year === 'number') {
+            cyear.push(inventory[i].car_year);
+        }
+        
+    }
+  
+   return cyear;
+}
 
-module.exports = { findCarById, findLastCar, sortcar};
+module.exports = { findCarById, findLastCar, sortcar, carYear};
