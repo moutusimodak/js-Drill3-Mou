@@ -51,4 +51,29 @@ function carYear(inventory){
    return cyear;
 }
 
-module.exports = { findCarById, findLastCar, sortcar, carYear};
+// Question -5
+function carsOlderThan2000() {
+  
+    const years = carYear(inventory);
+    console.log(' my Years:', years); 
+
+    const olderYears = [];
+    for (let i = 0; i < years.length; i++) {
+        if (years[i] < 2000) {
+            olderYears.push(years[i]);
+        }
+    }
+
+    console.log('Number of Cars Older Than 2000:', olderYears.length);
+    for (let i = 0; i < olderYears.length; i++) {
+        const car = inventory[i]
+        console.log(`Car details is - ${car.id} ,${car.car_make} ${car.car_model}, ${car.car_year}, `);   
+        
+    }
+    return olderYears;
+}
+
+
+
+
+module.exports = { findCarById, findLastCar, sortcar, carYear, carsOlderThan2000, CarName};
