@@ -74,6 +74,24 @@ function carsOlderThan2000() {
 }
 
 
+// Question -6
 
+function CarName(inventory){
+    const carlist =[]
+    if (inventory.length === 0) {
+        return 'The inventory is empty.';
+    }
+    
+    for (let i = 0; i < inventory.length; i++) {
+        
+        if(inventory[i].car_make === 'BMW' || inventory[i].car_make === 'Audi'){
+            carlist.push(inventory[i].car_make);
+            
+        }
+    }
+    return carlist;
+  
+   
+}
 
 module.exports = { findCarById, findLastCar, sortcar, carYear, carsOlderThan2000, CarName};

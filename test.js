@@ -30,3 +30,6 @@ console.log(`${carYearList} \n`);
 const olderCar = carsOlderThan2000(2000);
 console.log(`${olderCar}`);
 
+// 6
+const names = CarName(inventory);
+console.log(JSON.stringify(names));
